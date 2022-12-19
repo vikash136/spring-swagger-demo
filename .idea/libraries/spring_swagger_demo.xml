@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="spring-swagger-demo">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/spring-swagger-demo.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

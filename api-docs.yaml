@@ -1,0 +1,34 @@
+openapi: 3.0.1
+info:
+  title: OpenAPI definition
+  version: v0
+servers:
+- url: http://localhost:8080
+  description: Generated server url
+paths:
+  /studentAll:
+    get:
+      tags:
+      - student-controller
+      operationId: getAllStudent
+      responses:
+        "200":
+          description: OK
+          content:
+            '*/*':
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Student'
+components:
+  schemas:
+    Student:
+      type: object
+      properties:
+        studentId:
+          type: integer
+          format: int64
+        studentFirstName:
+          type: string
+        studentLastName:
+          type: string
